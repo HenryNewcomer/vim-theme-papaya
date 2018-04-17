@@ -1,6 +1,10 @@
 # "Papaya" Theme for Vim
 
-**Uploading preview images right; check back in a few minutes.**
+Example within a C++ file:
+![drag](https://i.imgur.com/9zBGEMZ.png)
+
+Example within an HTML file:
+![drag](https://i.imgur.com/uHsoHkn.png)
 
 ---
 **Important**
