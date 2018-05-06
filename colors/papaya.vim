@@ -108,7 +108,7 @@ hi TabLine guifg=#28272e guibg=#121117 guisp=#121117 gui=bold ctermfg=236 ctermb
 hi cursorim guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
 
 " JavaScript
-hi javaScriptBraces guifg=#ba7e88 guibg=NONE guisp=NONE gui=
+hi javaScriptBraces guifg=#ba7e88 guibg=NONE guisp=NONE gui=bold
 hi javaScriptFunction guifg=#ca95d3 guibg=NONE guisp=NONE gui=bold
 hi javaScriptNumber guifg=#bd7b6f guibg=NONE guisp=NONE gui=bold
 hi javaScriptParens guifg=#ba9f7e guibg=NONE guisp=NONE gui=bold
