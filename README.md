@@ -7,9 +7,6 @@ Example within an HTML file:
 ![drag](https://i.imgur.com/uHsoHkn.png)
 
 ---
-**Important**
-This theme's colors were chosen with 256-bit color in mind. Although it
-will sort've work with lower thresholds, it wasn't designed for it.
 
 ## Installation
 

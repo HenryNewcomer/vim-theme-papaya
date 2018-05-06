@@ -60,7 +60,7 @@ hi Search guifg=#00eaff guibg=#0088ff guisp=#0088ff gui=NONE ctermfg=45 ctermbg=
 hi Delimiter guifg=#BA9F7E guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=bold
 hi Statement guifg=#5dc271 guibg=NONE guisp=NONE gui=bold ctermfg=78 ctermbg=NONE cterm=bold
 hi SpellRare guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
-hi Comment guifg=#4a4857 guibg=NONE guisp=NONE gui=italic ctermfg=240 ctermbg=NONE cterm=italic
+hi Comment guifg=#4f4d5c guibg=NONE guisp=NONE gui=italic ctermfg=240 ctermbg=NONE cterm=italic
 hi Character guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
 hi Float guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
 hi Number guifg=#bd7b6f guibg=NONE guisp=NONE gui=NONE ctermfg=131 ctermbg=NONE cterm=NONE
@@ -105,3 +105,9 @@ hi Underlined guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=18
 hi DiffAdd guifg=#9ade91 guibg=#00b34e guisp=#00b34e gui=NONE ctermfg=114 ctermbg=35 cterm=bold
 hi TabLine guifg=#28272e guibg=#121117 guisp=#121117 gui=bold ctermfg=236 ctermbg=233 cterm=bold
 hi cursorim guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
+
+" Plugin related colors
+highlight OverLength ctermbg=red ctermfg=white guibg=#110f17
+let g:indentLine_color_gui = '#17161c'
+let g:indentLine_bgcolor_gui = '#1f1e24'
+
