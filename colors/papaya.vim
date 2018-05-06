@@ -48,7 +48,7 @@ hi Debug guifg=#BA9F7E guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cte
 hi PMenuSbar guifg=#ff0000 guibg=#26384d guisp=#26384d gui=NONE ctermfg=196 ctermbg=239 cterm=NONE
 hi Identifier guifg=#41577a guibg=NONE guisp=NONE gui=NONE ctermfg=60 ctermbg=NONE cterm=NONE
 hi SpecialChar guifg=#BA9F7E guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=bold
-hi Conditional guifg=#ffa200 guibg=NONE guisp=NONE gui=bold ctermfg=214 ctermbg=NONE cterm=bold
+hi Conditional guifg=#f8be5a guibg=NONE guisp=NONE gui=bold ctermfg=214 ctermbg=NONE cterm=bold
 hi StorageClass guifg=#536991 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi Todo guifg=#e66177 guibg=#16131f guisp=#16131f gui=NONE ctermfg=167 ctermbg=234 cterm=bold
 hi Special guifg=#ba9f7e guibg=NONE guisp=NONE gui=NONE ctermfg=137 ctermbg=NONE cterm=bold
@@ -63,11 +63,12 @@ hi SpellRare guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189
 hi Comment guifg=#4f4d5c guibg=NONE guisp=NONE gui=italic ctermfg=240 ctermbg=NONE cterm=italic
 hi Character guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
 hi Float guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=NONE
-hi Number guifg=#bd7b6f guibg=NONE guisp=NONE gui=NONE ctermfg=131 ctermbg=NONE cterm=NONE
+hi Number guifg=#bd7b6f guibg=NONE guisp=NONE gui=bold ctermfg=131 ctermbg=NONE cterm=bold
 hi Boolean guifg=#A1A6A8 guibg=NONE guisp=NONE gui=NONE ctermfg=248 ctermbg=NONE cterm=bold
 hi Operator guifg=#604f75 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold
 hi CursorLine guifg=NONE guibg=#2A2732 guisp=#2A2732 gui=NONE ctermfg=NONE ctermbg=236 cterm=NONE
 hi CursorLineNr guifg=#171717 guibg=#443E4F guisp=#344b59 gui=bold ctermfg=NONE ctermbg=236 cterm=bold " Fixes the yellow relative number
+
 hi TabLineFill guifg=#191f24 guibg=#0a090f guisp=#0a090f gui=bold ctermfg=235 ctermbg=233 cterm=bold
 hi WarningMsg guifg=#A1A6A8 guibg=#912C00 guisp=#912C00 gui=NONE ctermfg=248 ctermbg=88 cterm=bold
 hi VisualNOS guifg=#192224 guibg=#F9F9FF guisp=#F9F9FF gui=underline ctermfg=235 ctermbg=189 cterm=underline
@@ -105,6 +106,12 @@ hi Underlined guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=18
 hi DiffAdd guifg=#9ade91 guibg=#00b34e guisp=#00b34e gui=NONE ctermfg=114 ctermbg=35 cterm=bold
 hi TabLine guifg=#28272e guibg=#121117 guisp=#121117 gui=bold ctermfg=236 ctermbg=233 cterm=bold
 hi cursorim guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
+
+" JavaScript
+hi javaScriptBraces guifg=#ba7e88 guibg=NONE guisp=NONE gui=
+hi javaScriptFunction guifg=#ca95d3 guibg=NONE guisp=NONE gui=bold
+hi javaScriptNumber guifg=#bd7b6f guibg=NONE guisp=NONE gui=bold
+hi javaScriptParens guifg=#ba9f7e guibg=NONE guisp=NONE gui=bold
 
 " Plugin related colors
 highlight OverLength ctermbg=red ctermfg=white guibg=#110f17
