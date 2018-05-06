@@ -49,7 +49,10 @@ Feel free to check out my other themes:
 
 I haven't tested this theme using every language that Vim supports, but most of
 the more popular ones should look good. If you notice any oddities or have any
-questions, feel free to e-mail me at a.cliche.email@gmail.com
+questions or suggestions, feel free to e-mail me at a.cliche.email@gmail.com
+
+Otherwise, you're more than welcome to make a topic in the Issues tab if you
+prefer.
 
 *This project is licensed under the MIT License. Feel free to use and distribute
 it.*
