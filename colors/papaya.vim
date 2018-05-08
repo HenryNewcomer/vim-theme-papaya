@@ -115,6 +115,6 @@ hi javaScriptParens guifg=#ba9f7e guibg=NONE guisp=NONE gui=bold
 
 " Plugin related colors
 highlight OverLength ctermbg=red ctermfg=white guibg=#110f17
-let g:indentLine_color_gui = '#17161c'
+let g:indentLine_color_gui = '#535261'
 "let g:indentLine_bgcolor_gui = '#1f1e24'
 
