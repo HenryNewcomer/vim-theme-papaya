@@ -1,13 +1,13 @@
 # "Papaya" Theme for Vim
 
 <p align="center">
-**Supports *256-color* or *truecolor***
+  **256-color & 24-bit truecolor support**
 
-Example within a C++ file:
-![drag](https://i.imgur.com/9zBGEMZ.png)
+  Example within a C++ file:
+  ![drag](https://i.imgur.com/9zBGEMZ.png)
 
-Example within an HTML file:
-![drag](https://i.imgur.com/uHsoHkn.png)
+  Example within an HTML file:
+  ![drag](https://i.imgur.com/uHsoHkn.png)
 </p>
 
 ---
