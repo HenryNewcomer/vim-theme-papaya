@@ -1,12 +1,14 @@
 # "Papaya" Theme for Vim
 
+<p align="center">
 **Supports *256color* or *truecolor***
 
 Example within a C++ file:
-![drag](https://i.imgur.com/9zBGEMZ.png)
+<p align="center">![drag](https://i.imgur.com/9zBGEMZ.png)
 
 Example within an HTML file:
 ![drag](https://i.imgur.com/uHsoHkn.png)
+</p>
 
 ---
 
@@ -34,8 +36,6 @@ Linux/Mac OS) If on a Unix-based OS, simply clone/save this and place it in your
 Next, open, your `.vimrc` file and add:
 
     colorscheme papaya
-    set background=dark
-    syntax on
 
 Note that if you have a plugin manager and are using the manual installation,
 you will most likely have to add the three commands *after* your plugin's closing
