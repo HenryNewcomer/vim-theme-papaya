@@ -4,7 +4,7 @@
 **Supports *256-color* or *truecolor***
 
 Example within a C++ file:
-<p align="center">![drag](https://i.imgur.com/9zBGEMZ.png)
+![drag](https://i.imgur.com/9zBGEMZ.png)
 
 Example within an HTML file:
 ![drag](https://i.imgur.com/uHsoHkn.png)
