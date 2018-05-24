@@ -13,6 +13,7 @@ if version > 580
         syntax reset
     endif
 endif
+syntax enable
 set t_Co=256
 let g:colors_name = "papaya_original"
 
