@@ -19,9 +19,7 @@ Open your `vim.rc` files, and within the area of adding plugins, add
 `Plug: 'HenryNewcomer/vim-theme-papaya'`.
 
 Now scroll down past the `plug#end()` area and add:
-`
-    colorscheme papaya
-`
+`colorscheme papaya`
 
 If using another plugin manager, such as Vundle, the steps are appropriately
 similar for the first part. The second part is the same. Just reference your
@@ -33,9 +31,7 @@ Linux/Mac OS) If on a Unix-based OS, simply clone/save this and place it in your
  `~/.vim/colors/` directory (assuming you haven't changed this path).
 
 Next, open, your `.vimrc` file and add:
-`
-    colorscheme papaya
-`
+`colorscheme papaya`
 
 Note that if you have a plugin manager and are using the manual installation,
 you will most likely have to add the three commands *after* your plugin's closing
@@ -47,11 +43,11 @@ If your terminal has *truecolor* support, add the following to your *.vimrc*
 file. Alternatively, if you're using gvim, you shouldn't have to add this.
 This theme supports terminals with 256-color support, but was designed for
 *truecolor*.
-`
-if (has("termguicolors"))
-"  set termguicolors
-endif
-`
+
+> if (has("termguicolors"))
+> "  set termguicolors
+> endif
+
 
 ---
 
