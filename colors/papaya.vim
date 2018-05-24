@@ -16,6 +16,7 @@ if version > 580
         syntax reset
     endif
 endif
+syntax enable
 set t_Co=256
 let g:colors_name = "papaya"
 
@@ -69,7 +70,8 @@ endfunction
 " ----
 
 call SetGui("Boolean", "#A1A6A8", "NONE", "bold", "NONE")
-call Set256("Boolean", "248", "NONE", "bold")
+"call Set256("Boolean", "248", "NONE", "bold")
+call Set256("Boolean", "145", "NONE", "bold")
 
 call SetGui("Character", "#A1A6A8", "NONE", "bold", "NONE")
 call Set256("Character", "248", "NONE", "bold")
@@ -278,8 +280,8 @@ call Set256("Typedef", "60", "NONE", "bold")
 call SetGui("Underlined", "#F9F9FF", "#192224", "bold,underline", "#192224")
 call Set256("Underlined", "189", "235", "bold,underline")
 
-call SetGui("VertSplit", "#192224", "#5E6C70", "bold", "#5E6C70")
-call Set256("VertSplit", "235", "66", "bold")
+call SetGui("VertSplit", "#5e6c70", "NONE", "bold", "#5E6C70")
+call Set256("VertSplit", "59", "NONE", "bold")
 
 call SetGui("Visual", "#192224", "#F9F9FF", "bold", "#F9F9FF")
 call Set256("Visual", "235", "189", "bold")
@@ -316,7 +318,6 @@ call Set256("javaScriptParens", "137", "NONE", "bold")
 " Plugin related colors
 " ----
 
-hi! OverLength guibg=#110f17 gui=bold ctermfg=15 ctermbg=53 cterm=bold
 let g:indentLine_color_gui = '#535261'
 "let g:indentLine_bgcolor_gui = '#1f1e24'
 
@@ -325,9 +326,11 @@ let g:indentLine_color_gui = '#535261'
 " Miscellaneous
 " ----
 
+hi! OverLength guibg=#110f17 gui=bold ctermfg=15 ctermbg=0 cterm=bold
+
 " Fixes the yellow relative number
 call SetGui("CursorLineNr", "#171717", "#443E4F", "bold", "#344b59")
-call Set256("CursorLineNr", "NONE", "236", "bold")
+call Set256("CursorLineNr", "233", "59", "bold")
 
 
 " ----
