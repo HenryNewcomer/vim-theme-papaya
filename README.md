@@ -44,9 +44,10 @@ file. Alternatively, if you're using gvim, you shouldn't have to add this.
 This theme supports terminals with 256-color support, but was designed for
 *truecolor*.
 
-> if (has("termguicolors"))
-> "  set termguicolors
-> endif
+
+    if (has("termguicolors"))
+      set termguicolors
+    endif
 
 
 ---
