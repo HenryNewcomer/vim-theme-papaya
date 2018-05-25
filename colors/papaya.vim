@@ -85,13 +85,13 @@ call SetHi256("OperatorChars", "137", "NONE", "bold")
 " Define main color scheme properties
 " ----
 
-call SetHiGui("Boolean", "#A1A6A8", "NONE", "bold", "NONE")
+call SetHiGui("Boolean", "#a1a6a8", "NONE", "bold", "NONE")
 call SetHi256("Boolean", "145", "NONE", "bold")
 
-call SetHiGui("Character", "#A1A6A8", "NONE", "bold", "NONE")
+call SetHiGui("Character", "#a1a6a8", "NONE", "bold", "NONE")
 call SetHi256("Character", "248", "NONE", "bold")
 
-call SetHiGui("Comment", "#63616E", "NONE", "italic", "NONE")
+call SetHiGui("Comment", "#63616e", "NONE", "italic", "NONE")
 call SetHi256("Comment", "240", "NONE", "italic")
 
 call SetHiGui("Conditional", "#f8be5a", "NONE", "bold", "NONE")
@@ -103,22 +103,22 @@ call SetHi256("Constant", "98", "NONE", "bold")
 call SetHiGui("Cursor", "#000000", "#abbed1", "bold", "#abbed1")
 call SetHi256("Cursor", "NONE", "146", "bold")
 
-call SetHiGui("CursorColumn", "NONE", "#2A2732", "bold", "#2A2732")
+call SetHiGui("CursorColumn", "NONE", "#2a2732", "bold", "#2a2732")
 call SetHi256("CursorColumn", "NONE", "236", "bold")
 
 call SetHiGui("cursorim", "#192224", "#536991", "bold", "#536991")
 call SetHi256("cursorim", "235", "60", "bold")
 
-call SetHiGui("CursorLine", "NONE", "#2A2732", "bold", "#2A2732")
+call SetHiGui("CursorLine", "NONE", "#2a2732", "bold", "#2a2732")
 call SetHi256("CursorLine", "NONE", "236", "bold")
 
-call SetHiGui("Debug", "#BA9F7E", "NONE", "bold", "NONE")
+call SetHiGui("Debug", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("Debug", "137", "NONE", "bold")
 
-call SetHiGui("Define", "#BA9F7E", "NONE", "bold", "NONE")
+call SetHiGui("Define", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("Define", "137", "NONE", "bold")
 
-call SetHiGui("Delimiter", "#BA9F7E", "NONE", "bold", "NONE")
+call SetHiGui("Delimiter", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("Delimiter", "137", "NONE", "bold")
 
 call SetHiGui("DiffAdd", "#9ade91", "#00b34e", "bold", "#00b34e")
@@ -136,7 +136,7 @@ call SetHi256("DiffText", "52", "131", "bold")
 call SetHiGui("Directory", "#536991", "NONE", "bold", "NONE")
 call SetHi256("Directory", "60", "NONE", "bold")
 
-call SetHiGui("Error", "#A1A6A8", "#912C00", "bold", "#912C00")
+call SetHiGui("Error", "#a1a6a8", "#912c00", "bold", "#912c00")
 call SetHi256("Error", "248", "88", "bold")
 
 call SetHiGui("ErrorMsg", "#e84545", "#ad0025", "bold", "#ad0025")
@@ -145,10 +145,10 @@ call SetHi256("ErrorMsg", "203", "124", "bold")
 call SetHiGui("Exception", "#8a8a8a", "NONE", "bold", "NONE")
 call SetHi256("Exception", "245", "NONE", "bold")
 
-call SetHiGui("Float", "#A1A6A8", "NONE", "bold", "NONE")
+call SetHiGui("Float", "#a1a6a8", "NONE", "bold", "NONE")
 call SetHi256("Float", "248", "NONE", "bold")
 
-call SetHiGui("FoldColumn", "#192224", "#A1A6A8", "bold,italic", "#A1A6A8")
+call SetHiGui("FoldColumn", "#192224", "#a1a6a8", "bold,italic", "#a1a6a8")
 call SetHi256("FoldColumn", "235", "248", "bold")
 
 call SetHiLink("Folded", "FoldColumn")
@@ -156,37 +156,36 @@ call SetHiLink("Folded", "FoldColumn")
 call SetHiGui("Function", "#41577a", "NONE", "bold", "NONE")
 call SetHi256("Function", "60", "NONE", "bold")
 
-call SetHiGui("Identifier", "#41577a", "NONE", "bold", "NONE")
-call SetHi256("Identifier", "60", "NONE", "bold")
+call SetHiLink("Identifier", "Function")
 
 call SetHiGui("IncSearch", "#162a66", "#035fb0", "bold", "#035fb0")
 call SetHi256("IncSearch", "17", "25", "bold")
 
-call SetHiGui("Include", "#BA9F7E", "NONE", "bold", "NONE")
+call SetHiGui("Include", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("Include", "137", "NONE", "bold")
 
 call SetHiGui("Keyword", "#d957b6", "NONE", "bold", "NONE")
 call SetHi256("Keyword", "169", "NONE", "bold")
 
-call SetHiGui("Label", "#BA9F7E", "NONE", "bold", "NONE")
+call SetHiGui("Label", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("Label", "137", "NONE", "bold")
 
-call SetHiGui("LineNr", "#2a2833", "#18171c", "bold", "#18171c")
-call SetHi256("LineNr", "236", "234", "bold")
+call SetHiGui("LineNr", "#48464e", "#16151a", "bold", "#18171c")
+call SetHi256("LineNr", "59", "234", "bold")
 
-call SetHiGui("Macro", "#BA9F7E", "NONE", "bold", "NONE")
+call SetHiGui("Macro", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("Macro", "137", "NONE", "bold")
 
-call SetHiGui("MatchParen", "#BA9F7E", "NONE", "bold", "NONE")
+call SetHiGui("MatchParen", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("MatchParen", "137", "NONE", "bold")
 
-call SetHiGui("ModeMsg", "#F9F9F9", "#192224", "bold", "#192224")
+call SetHiGui("ModeMsg", "#f9f9f9", "#192224", "bold", "#192224")
 call SetHi256("ModeMsg", "15", "235", "bold")
 
-call SetHiGui("MoreMsg", "#BA9F7E", "NONE", "bold", "NONE")
+call SetHiGui("MoreMsg", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("MoreMsg", "137", "NONE", "bold")
 
-call SetHiGui("NonText", "#5E6C70", "NONE", "bold,italic", "NONE")
+call SetHiGui("NonText", "#5e6c70", "NONE", "bold,italic", "NONE")
 call SetHi256("NonText", "66", "NONE", "bold")
 
 call SetHiGui("Normal", "#b6d3e3", "#1f1e24", "bold")
@@ -216,7 +215,7 @@ call SetHi256("PreCondit", "47", "NONE", "bold")
 call SetHiGui("PreProc", "#72badb", "NONE", "bold", "NONE")
 call SetHi256("PreProc", "74", "NONE", "bold")
 
-call SetHiGui("Repeat", "#BA9F7E", "NONE", "bold", "NONE")
+call SetHiGui("Repeat", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("Repeat", "137", "NONE", "bold")
 
 call SetHiGui("Search", "#00eaff", "#0088ff", "bold", "#0088ff")
@@ -228,25 +227,25 @@ call SetHi256("SignColumn", "235", "60", "bold")
 call SetHiGui("Special", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("Special", "137", "NONE", "bold")
 
-call SetHiGui("SpecialChar", "#BA9F7E", "NONE", "bold", "NONE")
+call SetHiGui("SpecialChar", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("SpecialChar", "137", "NONE", "bold")
 
-call SetHiGui("SpecialComment", "#BA9F7E", "NONE", "NONE", "NONE")
+call SetHiGui("SpecialComment", "#ba9f7e", "NONE", "NONE", "NONE")
 call SetHi256("SpecialComment", "137", "NONE", "NONE")
 
-call SetHiGui("SpecialKey", "#5E6C70", "NONE", "bold,italic", "NONE")
+call SetHiGui("SpecialKey", "#5e6c70", "NONE", "bold,italic", "NONE")
 call SetHi256("SpecialKey", "66", "NONE", "bold")
 
-call SetHiGui("SpellBad", "#F9F9FF", "#192224", "bold,underline", "#192224")
+call SetHiGui("SpellBad", "#f9f9ff", "#192224", "bold,underline", "#192224")
 call SetHi256("SpellBad", "189", "235", "bold,underline")
 
-call SetHiGui("SpellCap", "#F9F9FF", "#192224", "bold,underline", "#192224")
+call SetHiGui("SpellCap", "#f9f9ff", "#192224", "bold,underline", "#192224")
 call SetHi256("SpellCap", "189", "235", "bold,underline")
 
-call SetHiGui("SpellLocal", "#F9F9FF", "#192224", "bold,underline", "#192224")
+call SetHiGui("SpellLocal", "#f9f9ff", "#192224", "bold,underline", "#192224")
 call SetHi256("SpellLocal", "189", "235", "bold,underline")
 
-call SetHiGui("SpellRare", "#F9F9FF", "#192224", "bold,underline", "#192224")
+call SetHiGui("SpellRare", "#f9f9ff", "#192224", "bold,underline", "#192224")
 call SetHi256("SpellRare", "189", "235", "bold,underline")
 
 call SetHiGui("Statement", "#5dc271", "NONE", "bold", "NONE")
@@ -276,10 +275,10 @@ call SetHi256("TabLineFill", "235", "233", "bold")
 call SetHiGui("TabLineSel", "#d4d4d4", "#1f1e24", "bold", "#1f1e24")
 call SetHi256("TabLineSel", "188", "235", "bold")
 
-call SetHiGui("Tag", "#BA9F7E", "NONE", "bold", "NONE")
+call SetHiGui("Tag", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("Tag", "137", "NONE", "bold")
 
-call SetHiGui("Title", "#F9F9FF", "#192224", "bold", "#192224")
+call SetHiGui("Title", "#f9f9ff", "#192224", "bold", "#192224")
 call SetHi256("Title", "189", "235", "bold")
 
 call SetHiGui("Todo", "#e66177", "NONE", "bold", "#16131f")
@@ -291,22 +290,22 @@ call SetHi256("Type", "33", "NONE", "bold")
 call SetHiGui("Typedef", "#536991", "NONE", "bold", "NONE")
 call SetHi256("Typedef", "60", "NONE", "bold")
 
-call SetHiGui("Underlined", "#F9F9FF", "#192224", "bold,underline", "#192224")
+call SetHiGui("Underlined", "#f9f9ff", "#192224", "bold,underline", "#192224")
 call SetHi256("Underlined", "189", "235", "bold,underline")
 
-call SetHiGui("VertSplit", "#5e6c70", "NONE", "bold", "#5E6C70")
+call SetHiGui("VertSplit", "#5e6c70", "NONE", "bold", "#5e6c70")
 call SetHi256("VertSplit", "59", "NONE", "bold")
 
-call SetHiGui("Visual", "#192224", "#F9F9FF", "bold", "#F9F9FF")
+call SetHiGui("Visual", "#192224", "#f9f9ff", "bold", "#f9f9ff")
 call SetHi256("Visual", "235", "189", "bold")
 
-call SetHiGui("VisualNOS", "#192224", "#F9F9FF", "bold,underline", "#F9F9FF")
+call SetHiGui("VisualNOS", "#192224", "#f9f9ff", "bold,underline", "#f9f9ff")
 call SetHi256("VisualNOS", "235", "189", "bold,underline")
 
-call SetHiGui("WarningMsg", "#A1A6A8", "#912C00", "bold", "#912C00")
+call SetHiGui("WarningMsg", "#a1a6a8", "#912c00", "bold", "#912c00")
 call SetHi256("WarningMsg", "248", "88", "bold")
 
-call SetHiGui("WildMenu", "NONE", "#A1A6A8", "bold", "#A1A6A8")
+call SetHiGui("WildMenu", "NONE", "#a1a6a8", "bold", "#a1a6a8")
 call SetHi256("WildMenu", "NONE", "248", "bold")
 
 
@@ -347,7 +346,7 @@ call SetHiGui("OverLength", "NONE", "#110f17", "bold")
 call SetHi256("OverLength", "233", "59", "bold")
 
 " Fixes the yellow relative number
-call SetHiGui("CursorLineNr", "#171717", "#443E4F", "bold", "#344b59")
+call SetHiGui("CursorLineNr", "#171717", "#443e4f", "bold", "#344b59")
 call SetHi256("CursorLineNr", "233", "59", "bold")
 
 
