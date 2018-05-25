@@ -67,8 +67,8 @@ endfunction
 " ----
 
 syntax match OperatorChars "?\|!\|+\|-\|\*\|%\|=\|&\||\|;\|:\|,\|<\|>\|\~\|(\|)\|{\|}\|\[\|\]\|/\(/\|\.\|*\)\@!"
-call SetHiGui("OperatorChars", "#ba9f7e", "NONE", "bold", "NONE")
-call SetHi256("OperatorChars", "137", "NONE", "bold")
+call SetHiGui("OperatorChars", "#4b8bc8", "NONE", "bold", "NONE")
+call SetHi256("OperatorChars", "68", "NONE", "bold")
 
 
 " ----
@@ -108,8 +108,7 @@ call SetHi256("Debug", "137", "NONE", "bold")
 call SetHiGui("Define", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("Define", "137", "NONE", "bold")
 
-call SetHiGui("Delimiter", "#ba9f7e", "NONE", "bold", "NONE")
-call SetHi256("Delimiter", "137", "NONE", "bold")
+call SetHiLink("Delimiter", "Function")
 
 call SetHiGui("DiffAdd", "#9ade91", "#00b34e", "bold", "#00b34e")
 call SetHi256("DiffAdd", "114", "35", "bold")
@@ -143,8 +142,7 @@ call SetHi256("FoldColumn", "235", "248", "bold")
 
 call SetHiLink("Folded", "FoldColumn")
 
-call SetHiGui("Function", "#41577a", "NONE", "bold", "NONE")
-call SetHi256("Function", "60", "NONE", "bold")
+call SetHiLink("Function", "OperatorChars")
 
 call SetHiLink("Identifier", "Function")
 
@@ -166,8 +164,8 @@ call SetHi256("LineNr", "59", "234", "bold")
 call SetHiGui("Macro", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("Macro", "137", "NONE", "bold")
 
-call SetHiGui("MatchParen", "#ba9f7e", "NONE", "bold", "NONE")
-call SetHi256("MatchParen", "137", "NONE", "bold")
+call SetHiGui("MatchParen", "#c8a44b", "NONE", "bold", "NONE")
+call SetHi256("MatchParen", "179", "NONE", "bold")
 
 call SetHiGui("ModeMsg", "#f9f9f9", "#192224", "bold", "#192224")
 call SetHi256("ModeMsg", "15", "235", "bold")
@@ -308,8 +306,6 @@ call SetHiGui("javaScriptBraces", "#ba7e88", "NONE", "bold", "NONE")
 call SetHi256("javaScriptBraces", "169", "NONE", "bold")
 call SetHiLink("javaScriptFunction", "Function")
 call SetHiLink("javaScriptNumber", "Number")
-call SetHiGui("javaScriptParens", "#ba9f7e", "NONE", "bold", "NONE")
-call SetHi256("javaScriptParens", "137", "NONE", "bold")
 
 " HTML
 call SetHiGui("htmlTag", "#437740", "NONE", "bold")
