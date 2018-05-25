@@ -72,7 +72,17 @@ endfunction
 
 
 " ----
-" Define color scheme properties
+" Set default operators
+" ----
+
+syntax match OperatorChars "?\|!\|+\|-\|\*\|%\|=\|&\||\|;\|:\|,\|<\|>\|\~\|(\|)\|{\|}\|\[\|\]\|/\(/\|\.\|*\)\@!"
+
+call SetHiGui("OperatorChars", "#ba9f7e", "NONE", "bold", "NONE")
+call SetHi256("OperatorChars", "137", "NONE", "bold")
+
+
+" ----
+" Define main color scheme properties
 " ----
 
 call SetHiGui("Boolean", "#A1A6A8", "NONE", "bold", "NONE")
@@ -142,8 +152,6 @@ call SetHiGui("FoldColumn", "#192224", "#A1A6A8", "bold,italic", "#A1A6A8")
 call SetHi256("FoldColumn", "235", "248", "bold")
 
 call SetHiLink("Folded", "FoldColumn")
-"call SetHiGui("Folded", "#192224", "#A1A6A8", "bold,italic", "#A1A6A8")
-"call SetHi256("Folded", "235", "248", "bold")
 
 call SetHiGui("Function", "#41577a", "NONE", "bold", "NONE")
 call SetHi256("Function", "60", "NONE", "bold")
@@ -274,8 +282,8 @@ call SetHi256("Tag", "137", "NONE", "bold")
 call SetHiGui("Title", "#F9F9FF", "#192224", "bold", "#192224")
 call SetHi256("Title", "189", "235", "bold")
 
-call SetHiGui("Todo", "#e66177", "#16131f", "bold", "#16131f")
-call SetHi256("Todo", "167", "234", "bold")
+call SetHiGui("Todo", "#e66177", "NONE", "bold", "#16131f")
+call SetHi256("Todo", "167", "NONE", "bold")
 
 call SetHiGui("Type", "#0088ff", "NONE", "bold", "NONE")
 call SetHi256("Type", "33", "NONE", "bold")
@@ -310,11 +318,13 @@ call SetHi256("WildMenu", "NONE", "248", "bold")
 call SetHiGui("javaScriptBraces", "#ba7e88", "NONE", "bold", "NONE")
 call SetHi256("javaScriptBraces", "169", "NONE", "bold")
 
-call SetHiGui("javaScriptFunction", "#ca95d3", "NONE", "bold", "NONE")
-call SetHi256("javaScriptFunction", "135", "NONE", "bold")
+"call SetHiGui("javaScriptFunction", "#ca95d3", "NONE", "bold", "NONE")
+"call SetHi256("javaScriptFunction", "135", "NONE", "bold")
+call SetHiLink("javaScriptFunction", "Function")
 
-call SetHiGui("javaScriptNumber", "#bd7b6f", "NONE", "bold", "NONE")
-call SetHi256("javaScriptNumber", "131", "NONE", "bold")
+"call SetHiGui("javaScriptNumber", "#bd7b6f", "NONE", "bold", "NONE")
+"call SetHi256("javaScriptNumber", "131", "NONE", "bold")
+call SetHiLink("javaScriptNumber", "Number")
 
 call SetHiGui("javaScriptParens", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("javaScriptParens", "137", "NONE", "bold")
@@ -332,7 +342,9 @@ let g:indentLine_color_gui = '#535261'
 " Miscellaneous
 " ----
 
-hi! OverLength guibg=#110f17 gui=bold ctermfg=15 ctermbg=0 cterm=bold
+" Sets the OverLength if in .vimrc: match OverLength /\%81v.\+/
+call SetHiGui("OverLength", "NONE", "#110f17", "bold")
+call SetHi256("OverLength", "233", "59", "bold")
 
 " Fixes the yellow relative number
 call SetHiGui("CursorLineNr", "#171717", "#443E4F", "bold", "#344b59")
