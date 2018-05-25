@@ -27,41 +27,32 @@ let g:colors_name = "papaya"
 
 function! SetHiGui(group, ...)
   let theme_string = 'hi! ' . a:group . ' '
-
   if strlen(a:1)
     let theme_string .= 'guifg=' . a:1 . ' '
   endif
-
   if strlen(a:2)
     let theme_string .= 'guibg=' . a:2 . ' '
   endif
-
   if strlen(a:3)
     let theme_string .= 'gui=' . a:3 . ' '
   endif
-
   if a:0 >= 4 && strlen(a:4)
     let theme_string .= 'guisp=' . a:4
   endif
-
   execute theme_string
 endfunction
 
 function! SetHi256(group, ...)
   let theme_string = 'hi! ' . a:group . ' '
-
   if strlen(a:1)
     let theme_string .= 'ctermfg=' . a:1 . ' '
   endif
-
   if strlen(a:2)
     let theme_string .= 'ctermbg=' . a:2 . ' '
   endif
-
   if a:0 >= 3 && strlen(a:3)
     let theme_string .= 'cterm=' . a:3
   endif
-
   execute theme_string
 endfunction
 
@@ -76,7 +67,6 @@ endfunction
 " ----
 
 syntax match OperatorChars "?\|!\|+\|-\|\*\|%\|=\|&\||\|;\|:\|,\|<\|>\|\~\|(\|)\|{\|}\|\[\|\]\|/\(/\|\.\|*\)\@!"
-
 call SetHiGui("OperatorChars", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("OperatorChars", "137", "NONE", "bold")
 
@@ -316,17 +306,42 @@ call SetHi256("WildMenu", "NONE", "248", "bold")
 " JavaScript
 call SetHiGui("javaScriptBraces", "#ba7e88", "NONE", "bold", "NONE")
 call SetHi256("javaScriptBraces", "169", "NONE", "bold")
-
-"call SetHiGui("javaScriptFunction", "#ca95d3", "NONE", "bold", "NONE")
-"call SetHi256("javaScriptFunction", "135", "NONE", "bold")
 call SetHiLink("javaScriptFunction", "Function")
-
-"call SetHiGui("javaScriptNumber", "#bd7b6f", "NONE", "bold", "NONE")
-"call SetHi256("javaScriptNumber", "131", "NONE", "bold")
 call SetHiLink("javaScriptNumber", "Number")
-
 call SetHiGui("javaScriptParens", "#ba9f7e", "NONE", "bold", "NONE")
 call SetHi256("javaScriptParens", "137", "NONE", "bold")
+
+" HTML
+call SetHiGui("htmlTag", "#437740", "NONE", "bold")
+call SetHi256("htmlTag", "65", "NONE", "bold")
+call SetHiLink("htmlEndTag", "htmlTag")
+call SetHiLink("htmlTagN", "htmlTag")
+
+" Markdown
+" TODO: These are using placeholder groups; update them
+call SetHiLink("markdownBold", "String")
+call SetHiLink("markdownCodeBlock", "String")
+call SetHiLink("markdownCodeDelimiter", "String")
+call SetHiLink("markdownH1", "String")
+call SetHiLink("markdownH2", "String")
+call SetHiLink("markdownH3", "String")
+call SetHiLink("markdownH4", "String")
+call SetHiLink("markdownH5", "String")
+call SetHiLink("markdownH6", "String")
+call SetHiLink("markdownHeadingDelimiter", "String")
+call SetHiLink("markdownInlineCode", "String")
+call SetHiLink("markdownInlineDelimiter", "String")
+call SetHiLink("markdownItalic", "String")
+call SetHiLink("markdownItemDelimiter", "String")
+call SetHiLink("markdownLinkContainer", "Function")
+call SetHiLink("markdownLinkInText", "String")
+call SetHiLink("markdownLinkText", "htmlTag")
+call SetHiLink("markdownListItemAtLevel1", "htmlTag")
+call SetHiLink("markdownListItemAtLevel2", "htmlTag")
+call SetHiLink("markdownListItemAtLevel3", "htmlTag")
+call SetHiLink("markdownRule", "String")
+call SetHiLink("markdownTextContainer", "Function")
+call SetHiLink("markdownXmlElement", "htmlTag")
 
 
 " ----
