@@ -49,6 +49,12 @@ This theme supports terminals with 256-color support, but was designed for
       set termguicolors
     endif
 
+---
+
+Since I plan to continue updating this theme in an effort to help support
+additional filetypes, I've kept a copy of the original Papaya theme in
+case anyone wants it. To use it, instead of putting `colorscheme papaya`
+in your .vimrc file, put `colorscheme papaya_original`
 
 ---
 
