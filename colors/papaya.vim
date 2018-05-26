@@ -11,15 +11,23 @@
 scriptencoding utf-8
 set background=dark
 if version > 580
-    hi clear
-    if exists("syntax_on")
-        syntax reset
-    endif
+  hi clear
+  if exists("syntax_on")
+    syntax reset
+  endif
 endif
 syntax enable
 set t_Co=256
 let g:colors_name = "papaya"
 
+
+" ----
+" Papaya config
+" ----
+
+if ! exists('g:papaya_color')
+  let g:papaya_color = 'default'
+endif
 
 " ----
 " Functions; outputs the highlight strings
@@ -360,6 +368,22 @@ call SetHi256("OverLength", "233", "59", "NONE")
 " Fixes the yellow relative number
 call SetHiGui("CursorLineNr", "#171717", "#443e4f", "NONE", "#344b59")
 call SetHi256("CursorLineNr", "233", "59", "NONE")
+
+" ----
+" Overwrite colors if alternative Papaya scheme is called
+" ----
+
+if g:papaya_color == 'blue'
+  " TODO: Update the 256colors
+  call SetHiGui("Normal", "#b6d3e3", "#18222c", "NONE")
+  call SetHi256("Normal", "152", "23", "NONE")
+  call SetHiGui("CursorLine", "NONE", "#12171c", "NONE", "NONE")
+  call SetHi256("CursorLine", "NONE", "236", "NONE")
+
+call SetHiGui("LineNr", "#ffffff", "#12171c", "NONE", "NONE")
+call SetHi256("LineNr", "59", "234", "NONE")
+
+endif
 
 
 " ----
