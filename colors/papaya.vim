@@ -25,8 +25,8 @@ let g:colors_name = "papaya"
 " Papaya config
 " ----
 
-if ! exists('g:papaya_color')
-  let g:papaya_color = 'default'
+if ! exists('g:papaya_gui_color')
+  let g:papaya_gui_color = 'default'
 endif
 
 " ----
@@ -124,11 +124,10 @@ call SetHi256("DiffText", "52", "131", "NONE")
 call SetHiGui("Directory", "#536991", "NONE", "NONE", "NONE")
 call SetHi256("Directory", "60", "NONE", "NONE")
 
-call SetHiGui("Error", "#a1a6a8", "#912c00", "NONE", "#912c00")
-call SetHi256("Error", "248", "88", "NONE")
+call SetHiGui("Error", "#e84545", "#ad0025", "NONE", "#ad0025")
+call SetHi256("Error", "167", "1", "NONE")
 
-call SetHiGui("ErrorMsg", "#e84545", "#ad0025", "NONE", "#ad0025")
-call SetHi256("ErrorMsg", "203", "124", "NONE")
+call SetHiLink("ErrorMsg", "Error")
 
 call SetHiGui("Exception", "#8a8a8a", "NONE", "NONE", "NONE")
 call SetHi256("Exception", "245", "NONE", "NONE")
@@ -373,16 +372,12 @@ call SetHi256("CursorLineNr", "233", "59", "NONE")
 " Overwrite colors if alternative Papaya scheme is called
 " ----
 
-if g:papaya_color == 'blue'
-  " TODO: Update the 256colors
-  call SetHiGui("Normal", "#b6d3e3", "#18222c", "NONE")
-  call SetHi256("Normal", "152", "23", "NONE")
+if g:papaya_gui_color == 'blue'
   call SetHiGui("CursorLine", "NONE", "#12171c", "NONE", "NONE")
-  call SetHi256("CursorLine", "NONE", "236", "NONE")
-
-call SetHiGui("LineNr", "#ffffff", "#12171c", "NONE", "NONE")
-call SetHi256("LineNr", "59", "234", "NONE")
-
+  call SetHiGui("CursorLineNr", "#12171c", "#5a6f77", "NONE")
+  call SetHiGui("LineNr", "#5a6f77", "#12171c", "NONE")
+  call SetHiGui("Normal", "#b6d3e3", "#18222c", "NONE")
+  let g:indentLine_color_gui = '#2f3842'
 endif
 
 

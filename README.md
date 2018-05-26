@@ -51,6 +51,19 @@ This theme supports terminals with 256-color support, but was designed for
 
 ---
 
+While this theme is still a work-in-progress, I've made a version that
+is more "blue-oriented," compared to the standard purple Papaya theme.
+For anyone wishing to use the blue version, open your vimrc. Instead of
+`colorscheme papaya` put:
+
+    colorscheme papaya
+    let g:papaya_gui_color='blue'
+
+Most of the colors will be shared bewteen the different Papaya themes,
+hence why I'm not making the blue one it's own separate theme.
+
+---
+
 Since I plan to continue updating this theme in an effort to help support
 additional filetypes, I've kept a copy of the original Papaya theme in
 case anyone wants it. To use it, instead of putting `colorscheme papaya`
