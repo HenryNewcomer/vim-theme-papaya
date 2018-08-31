@@ -261,8 +261,8 @@ call SetHi256("TabLineSel", "188", "235", "NONE")
 call SetHiGui("Tag", "#ba9f7e", "NONE", "NONE", "NONE")
 call SetHi256("Tag", "137", "NONE", "NONE")
 
-call SetHiGui("Title", "#f9f9ff", "#192224", "NONE", "#192224")
-call SetHi256("Title", "189", "235", "NONE")
+call SetHiGui("Title", "#f9f9ff", "NONE", "NONE", "#263340")
+call SetHi256("Title", "189", "NONE", "NONE")
 
 call SetHiGui("Todo", "#e66177", "NONE", "bold", "#16131f")
 call SetHi256("Todo", "167", "NONE", "bold")
